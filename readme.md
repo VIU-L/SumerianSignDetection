@@ -11,13 +11,13 @@ Detect bounding boxes for Sumerian cuneiform signs.
 https://heidata.uni-heidelberg.de/file.xhtml?persistentId=doi:10.11588/DATA/IE8CCN/X6APKT&version=2.0  
 and put the contents into HeiCuBeDa folder.  
 You should make sure that the path becomes:  
-'''
+```
 (root of project)   
 └── HeiCuBeDa   
     ├── Images_MSII_Filter   
     │   └── ...   
     └── HeiCuBeDa_B_Hilprecht_Database_240121.json   
-'''
+```
 2. The annotation MaiCuBeDa/translitmetadata.csv is from MaiCuBeDa:   
 https://heidata.uni-heidelberg.de/file.xhtml?persistentId=doi:10.11588/DATA/QSNIQ2/OXQBR4&version=1.1  
 But after slight modifications to remove format bugs.  
