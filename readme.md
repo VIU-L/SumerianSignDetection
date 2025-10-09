@@ -1,13 +1,12 @@
-**ABOUT**
-Computer Vision coursework project in Ecole polytechnique.
-Author: MENG Yanxu, ZOU Yuran.
-Status: Not finished.
+**ABOUT**  
+Computer Vision coursework project in Ecole polytechnique.  
+Author: MENG Yanxu, ZOU Yuran.  
+Status: Not finished.  
 
-**Goal**
+**Goal**  
 Detect bounding boxes for Sumerian cuneiform signs.
 
-**DATA**
-
+**DATA**  
 1. First you need to download the HeiCuBeDa image dataset:
 https://heidata.uni-heidelberg.de/file.xhtml?persistentId=doi:10.11588/DATA/IE8CCN/X6APKT&version=2.0  
 and put the contents into HeiCuBeDa folder.  
@@ -18,12 +17,12 @@ AND /HeiCuBeDa/HeiCuBeDa_B_Hilprecht_Database_240121.json
 https://heidata.uni-heidelberg.de/file.xhtml?persistentId=doi:10.11588/DATA/QSNIQ2/OXQBR4&version=1.1
 But after slight modifications to remove format bugs. (You don't need to download anything here).
 
-**DEVELOPPER NOTES**
+**DEVELOPPER NOTES**  
 1. Specific goals? (Only Detect bboxes of signs? Detect+Classify them? Should we use charname or transliteration?)
 2. Framework? (one-step Faster-RCNN style? First-detect-then-classify?)
 3. More advanced objectives? (Based on detections, generate whole transcription of text? If we want transliteration, how do we infer correct reading of a sign? Attention module? May require more NLP.)
 
-**INSPIRATIONS**
+**INSPIRATIONS**  
 Valuable papers:   
 1. https://ieeexplore.ieee.org/document/10350498  
 The dataset contributor. They also made a RCNN style framework, but did not publish code.
