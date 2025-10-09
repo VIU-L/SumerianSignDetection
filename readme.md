@@ -3,7 +3,7 @@ Computer Vision coursework project in Ecole polytechnique.
 Author: MENG Yanxu, ZOU Yuran.  
 Status: Not finished.  
 
-**Goal**  
+**GOAL**  
 Detect bounding boxes for Sumerian cuneiform signs.
 
 **DATA**  
@@ -14,8 +14,9 @@ You should make sure that the path becomes:
 (root of project)/HeiCuBeDa/Images_MSII_Filter/...  
 AND /HeiCuBeDa/HeiCuBeDa_B_Hilprecht_Database_240121.json
 2. The annotation MaiCuBeDa/translitmetadata.csv is from MaiCuBeDa:   
-https://heidata.uni-heidelberg.de/file.xhtml?persistentId=doi:10.11588/DATA/QSNIQ2/OXQBR4&version=1.1
-But after slight modifications to remove format bugs. (You don't need to download anything here).
+https://heidata.uni-heidelberg.de/file.xhtml?persistentId=doi:10.11588/DATA/QSNIQ2/OXQBR4&version=1.1  
+But after slight modifications to remove format bugs.  
+*(You don't need to download anything here)*.
 
 **DEVELOPPER NOTES**  
 1. Specific goals? (Only Detect bboxes of signs? Detect+Classify them? Should we use charname or transliteration?)
