@@ -18,10 +18,11 @@ You should make sure that the path becomes:
     │   └── ...   
     └── HeiCuBeDa_B_Hilprecht_Database_240121.json   
 ```
-2. The annotation MaiCuBeDa/translitmetadata.csv is from MaiCuBeDa:   
+2. The annotations in MaiCuBeDa are based on MaiCuBeDa:   
 https://heidata.uni-heidelberg.de/file.xhtml?persistentId=doi:10.11588/DATA/QSNIQ2/OXQBR4&version=1.1  
-But after slight modifications to remove format bugs.  
-*(You don't need to download anything here)*.
+*(No download required)*.  
+```all_photo_anno.json, train_photo_anno.json, test_photo_json```: bbox annotation of each photo. Each bbox has a "charname" and a "transliteration".  
+```charname_to_id.json, transliteration_to_id.json```: established dict mapping textual categories to int.
 
 **DEVELOPPER NOTES**  
 1. Specific goals? (Only Detect bboxes of signs? Detect+Classify them? Should we use charname or transliteration?)
