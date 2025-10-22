@@ -40,8 +40,8 @@ class CuneiformDataset(Dataset):
 
         boxes, labels, areas = [], [], []
         for ann in data["bboxes"]:
-            # bbox format in annotation: [xmin, xmax, ymin, ymax]
-            xmin, xmax, ymin, ymax = ann["bbox"]
+            # bbox format in annotation: [xmin, ymin, xmax, ymax]
+            xmin, ymin, xmax, ymax = ann["bbox"]
             boxes.append([xmin, ymin, xmax, ymax])
 
             if self.label_key == "is_char":
@@ -111,10 +111,10 @@ def crop_image_and_bbox(image,boxes,crop_to,random_pick=True):
     cropped_boxes[:, 2] = boxes[:, 2] - crop_left  # xmax
     cropped_boxes[:, 3] = boxes[:, 3] - crop_top   # ymax
     # Ensure boxes are within the cropped image boundaries
-    cropped_boxes[:, 0] = torch.clamp(cropped_boxes[:, 0], min=0, max=W - crop_left - crop_right)  # xmin
-    cropped_boxes[:, 1] = torch.clamp(cropped_boxes[:, 1], min=0, max=H - crop_top - crop_bottom)    # ymin
-    cropped_boxes[:, 2] = torch.clamp(cropped_boxes[:, 2], min=0, max=W - crop_left - crop_right)  # xmax
-    cropped_boxes[:, 3] = torch.clamp(cropped_boxes[:, 3], min=0, max=H - crop_top - crop_bottom)    # ymax
+    # cropped_boxes[:, 0] = torch.clamp(cropped_boxes[:, 0], min=0, max=W - crop_left - crop_right)  # xmin
+    # cropped_boxes[:, 1] = torch.clamp(cropped_boxes[:, 1], min=0, max=H - crop_top - crop_bottom)    # ymin
+    # cropped_boxes[:, 2] = torch.clamp(cropped_boxes[:, 2], min=0, max=W - crop_left - crop_right)  # xmax
+    # cropped_boxes[:, 3] = torch.clamp(cropped_boxes[:, 3], min=0, max=H - crop_top - crop_bottom)    # ymax
     return cropped_image, cropped_boxes
 
 def change_ratio_image_and_bbox(image,boxes,ratio_range=(0.9,1.1)):

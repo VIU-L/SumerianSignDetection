@@ -1,6 +1,9 @@
 /HeiCuBeDa/Images_MSII_Filter/*
 /MaiCuBeDa_Images/*
 */weights/*.pth
+3_YOLO_ultra/sumerian_yolo/*
+3_YOLO_ultra/dataset/*
+3_YOLO_ultra/*.pt
 
 !/HeiCuBeDa/Images_MSII_Filter/.gitkeep
 !/MaiCuBeDa_Images/.gitkeep
