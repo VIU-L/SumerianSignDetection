@@ -3,6 +3,9 @@
 */weights/*.pth
 3_YOLO_ultra/sumerian_yolo/*
 3_YOLO_ultra/dataset/*
+3_YOLO_ultra/dataset_charname/*
+3_YOLO_ultra/dataset_transliteration/*
+3_YOLO_ultra/dataset_charname_topN/*
 3_YOLO_ultra/*.pt
 
 !/HeiCuBeDa/Images_MSII_Filter/.gitkeep
