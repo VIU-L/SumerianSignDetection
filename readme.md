@@ -5,6 +5,10 @@ Author: MENG Yanxu, ZOU Yuran.
 ## GOAL
 Detection, Classification and Transcription on Sumerian tablets.
 
+## REPORT
+You can read the report here:  
+https://www.overleaf.com/read/shkgjsjzdttw#505c70
+
 ## DATA
 1. First you need to download the HeiCuBeDa image dataset:
 https://heidata.uni-heidelberg.de/file.xhtml?persistentId=doi:10.11588/DATA/IE8CCN/X6APKT&version=2.0  
