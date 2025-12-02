@@ -30,7 +30,7 @@ You should make sure that the path becomes:
 
 ## TRAINING AND EVALUATION
 1. Run ```playgrounds/prepare_data.ipynb``` to prepare the data into json. 
-2. Run ```playgrounds/make_yaml_dataset.ipynb``` to make YOLO-friendly yaml dataset. Specify the desired version of dataset (is_sign, unicode, charname, unicode_topN, charname_topN) in the 4th case.
+2. Run ```playgrounds/make_yaml_dataset.ipynb``` to make YOLO-friendly yaml dataset. Specify the desired version of dataset (is_sign, unicode, charname, unicode_topN, charname_topN) in the 4th cell.
 3. Prepare an environment equipped with torch, and then ```pip install ultralytics```
 4. Run ```3_YOLO_ultra/train.ipynb```. Remember to use the correct yaml dataset that you just created.  
 The full 70-epoch training takes about 4 hours on my RTX 3060.
