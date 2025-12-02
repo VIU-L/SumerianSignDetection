@@ -6,7 +6,13 @@
 3_YOLO_ultra/dataset_charname/*
 3_YOLO_ultra/dataset_transliteration/*
 3_YOLO_ultra/dataset_charname_topN/*
+
+3_YOLO_ultra/dataset_unicode/*
+3_YOLO_ultra/dataset_unicode_topN/*
 3_YOLO_ultra/*.pt
+
+3_YOLO_ultra/runs/*
+
 
 !/HeiCuBeDa/Images_MSII_Filter/.gitkeep
 !/MaiCuBeDa_Images/.gitkeep
