@@ -6,8 +6,7 @@ Author: MENG Yanxu, ZOU Yuran.
 Detection, Classification and Transcription on Sumerian tablets.
 
 ## REPORT
-You can read the report here:  
-https://www.overleaf.com/read/shkgjsjzdttw#505c70
+You can read the report [HERE](Report_CV.pdf).
 
 ## DATA
 1. First you need to download the HeiCuBeDa image dataset:
